@@ -1,40 +1,39 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #fff8f5;
-  color: #333;
+  background: #fff7f5;
 }
 
-/* HEADER */
-header {
+/* TOPBAR FIXA */
+.topbar {
+  position: sticky;
+  top: 0;
+  background: #2d132c;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 40px;
-  background: #3b1f2b;
-  color: white;
+  padding: 12px 20px;
+  z-index: 10;
 }
 
 .logo {
-  font-size: 22px;
   font-weight: bold;
+  font-size: 20px;
 }
 
-nav a {
-  color: white;
-  margin-left: 15px;
-  text-decoration: none;
+#search {
+  width: 40%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 70px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #ffe3ec, #fff);
-}
-
-.hero h1 {
-  font-size: 42px;
 }
 
 /* PRODUTOS */
@@ -42,67 +41,68 @@ nav a {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
-  padding: 40px;
+  gap: 20px;
+  padding: 30px;
 }
 
-/* CARD MAIS PROFISSIONAL */
 .card {
+  width: 260px;
   background: white;
-  width: 280px;
-  border-radius: 15px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
-/* 🔥 CORREÇÃO DA IMAGEM */
 .card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;   /* <- ISTO resolve o teu problema */
-  display: block;
+  height: 180px;
+  object-fit: cover;
 }
 
 .card h3 {
-  margin: 10px 0 5px;
+  margin: 10px;
 }
 
 .card p {
-  font-size: 14px;
+  margin: 0 10px;
   color: #666;
-  padding: 0 10px;
 }
 
 .card span {
   display: block;
+  margin: 10px;
   font-weight: bold;
-  margin: 10px 0;
 }
 
 button {
-  margin-bottom: 15px;
+  margin: 10px;
+  width: 90%;
   padding: 10px;
-  width: 80%;
   border: none;
-  background: #3b1f2b;
+  background: #2d132c;
   color: white;
   border-radius: 8px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #5a2c40;
+  background: #4a1f40;
+}
+
+/* CART */
+.cart {
+  font-size: 18px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #3b1f2b;
+  background: #2d132c;
   color: white;
 }
