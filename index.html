@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt">
 <head>
+  <meta charset="UTF-8">
   <title>Gerador de Rotina</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Gerador de Rotina</h1>
-  <input type="number" id="horas" placeholder="Horas disponíveis">
-  <button onclick="gerarRotina()">Gerar</button>
-  <p id="resultado"></p>
+
+  <div class="container">
+    <h1>📅 Gerador de Rotina</h1>
+    <p>Organiza o teu dia de forma simples</p>
+
+    <input type="number" id="horas" placeholder="Horas disponíveis">
+    
+    <select id="objetivo">
+      <option value="estudo">Estudo</option>
+      <option value="trabalho">Trabalho</option>
+      <option value="treino">Treino</option>
+      <option value="descanso">Descanso</option>
+    </select>
+
+    <button onclick="gerarRotina()">Gerar Rotina</button>
+
+    <div id="resultado"></div>
+  </div>
 
   <script src="script.js"></script>
 </body>
