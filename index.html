@@ -2,29 +2,60 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>Gerador de Rotina</title>
+  <title>SweetBite Store</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="container">
-    <h1>📅 Gerador de Rotina</h1>
-    <p>Organiza o teu dia de forma simples</p>
 
-    <input type="number" id="horas" placeholder="Horas disponíveis">
+<header>
+  <h1>🍫 SweetBite</h1>
+  <p>Doces artesanais feitos com amor</p>
+</header>
 
-    <select id="objetivo">
-      <option value="Estudo">Estudo</option>
-      <option value="Trabalho">Trabalho</option>
-      <option value="Treino">Treino</option>
-      <option value="Descanso">Descanso</option>
-    </select>
+<nav>
+  <a href="#">Início</a>
+  <a href="#">Produtos</a>
+  <a href="#">Sobre</a>
+  <a href="#">Contacto</a>
+</nav>
 
-    <button onclick="gerarRotina()">Gerar Rotina</button>
+<section class="hero">
+  <h2>Os melhores chocolates artesanais</h2>
+  <p>Feitos à mão, com ingredientes de qualidade</p>
+</section>
 
-    <div id="resultado"></div>
+<section class="produtos">
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Chocolates">
+    <h3>Caixa Clássica</h3>
+    <p>12 chocolates sortidos artesanais</p>
+    <span>14,99€</span>
+    <button onclick="comprar('Caixa Clássica')">Comprar</button>
   </div>
 
-  <script src="script.js"></script>
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Trufas">
+    <h3>Trufas Premium</h3>
+    <p>Trufas de chocolate belga</p>
+    <span>9,99€</span>
+    <button onclick="comprar('Trufas Premium')">Comprar</button>
+  </div>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/250x150" alt="Caixa oferta">
+    <h3>Caixa Oferta</h3>
+    <p>Edição especial para presentes</p>
+    <span>19,99€</span>
+    <button onclick="comprar('Caixa Oferta')">Comprar</button>
+  </div>
+
+</section>
+
+<footer>
+  <p>© 2026 SweetBite Store</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
