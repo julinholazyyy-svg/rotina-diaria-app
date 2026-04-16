@@ -12,7 +12,7 @@ body {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  width: 300px;
+  width: 320px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
@@ -26,23 +26,19 @@ p {
   font-size: 14px;
 }
 
-input, select {
+input, select, button {
   width: 100%;
   padding: 10px;
   margin-top: 10px;
   border-radius: 8px;
   border: 1px solid #ddd;
+  font-size: 14px;
 }
 
 button {
-  margin-top: 15px;
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 8px;
   background: #4facfe;
   color: white;
-  font-size: 16px;
+  border: none;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -52,7 +48,8 @@ button:hover {
 }
 
 #resultado {
-  margin-top: 20px;
+  margin-top: 15px;
   text-align: left;
+  white-space: pre-line;
   font-size: 14px;
 }
