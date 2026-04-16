@@ -4,7 +4,6 @@ body {
   background: #fff7f5;
 }
 
-/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -32,14 +31,12 @@ header {
   font-size: 18px;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding: 60px 20px;
   background: linear-gradient(135deg, #ffe3ec, #ffffff);
 }
 
-/* PRODUTOS */
 .produtos {
   display: flex;
   flex-wrap: wrap;
@@ -48,7 +45,6 @@ header {
   padding: 30px;
 }
 
-/* CARD */
 .card {
   width: 260px;
   background: white;
@@ -98,7 +94,6 @@ button:hover {
   background: #3a1b3a;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
