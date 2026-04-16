@@ -4,7 +4,7 @@ body {
   background: #fff7f5;
 }
 
-/* HEADER BRAND */
+/* HEADER */
 header {
   position: sticky;
   top: 0;
@@ -19,11 +19,10 @@ header {
 .logo {
   font-size: 22px;
   font-weight: bold;
-  letter-spacing: 1px;
 }
 
 #search {
-  width: 40%;
+  width: 45%;
   padding: 8px;
   border-radius: 6px;
   border: none;
@@ -36,39 +35,36 @@ header {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 70px 20px;
+  padding: 60px 20px;
   background: linear-gradient(135deg, #ffe3ec, #ffffff);
-}
-
-.hero h1 {
-  font-size: 40px;
 }
 
 /* PRODUTOS */
 .produtos {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
-  padding: 40px;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
 }
 
+/* CARD */
 .card {
-  width: 270px;
+  width: 260px;
   background: white;
-  border-radius: 14px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
-  height: 180px;
+  height: 170px;
   object-fit: cover;
 }
 
