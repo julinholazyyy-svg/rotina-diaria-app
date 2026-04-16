@@ -29,22 +29,12 @@ nav a {
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
   background: linear-gradient(135deg, #ffe3ec, #fff);
 }
 
 .hero h1 {
-  font-size: 40px;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 20px;
-  background: #3b1f2b;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
+  font-size: 42px;
 }
 
 /* PRODUTOS */
@@ -56,23 +46,26 @@ nav a {
   padding: 40px;
 }
 
+/* CARD MAIS PROFISSIONAL */
 .card {
   background: white;
   width: 280px;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
+/* 🔥 CORREÇÃO DA IMAGEM */
 .card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: 200px;
+  object-fit: cover;   /* <- ISTO resolve o teu problema */
+  display: block;
 }
 
 .card h3 {
@@ -91,7 +84,7 @@ nav a {
   margin: 10px 0;
 }
 
-.card button {
+button {
   margin-bottom: 15px;
   padding: 10px;
   width: 80%;
@@ -102,7 +95,7 @@ nav a {
   cursor: pointer;
 }
 
-.card button:hover {
+button:hover {
   background: #5a2c40;
 }
 
