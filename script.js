@@ -1,10 +1,58 @@
-function gerarRotina() {
-  let horas = document.getElementById("horas").value;
-  let resultado = "";
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  for (let i = 0; i < horas; i++) {
-    resultado += `Hora ${i + 1}: Estudo ou trabalho\n`;
-  }
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
 
-  document.getElementById("resultado").innerText = resultado;
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  font-size: 14px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00c6ff;
+}
+
+#resultado {
+  margin-top: 20px;
+  text-align: left;
+  font-size: 14px;
 }
