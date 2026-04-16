@@ -1,55 +1,75 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #4facfe, #00f2fe);
-  height: 100vh;
+  background: #fff7f9;
+  text-align: center;
+}
+
+header {
+  background: #7a2e5c;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  background: #5a2043;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 40px;
+  background: #ffe3ec;
+}
+
+.produtos {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  gap: 20px;
 }
 
-.container {
+.card {
   background: white;
-  padding: 30px;
-  border-radius: 15px;
-  width: 320px;
-  text-align: center;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin-bottom: 10px;
-}
-
-p {
-  color: #666;
-  font-size: 14px;
-}
-
-input, select, button {
+.card img {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
   border-radius: 8px;
-  border: 1px solid #ddd;
-  font-size: 14px;
+}
+
+.card span {
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
 button {
-  background: #4facfe;
+  background: #7a2e5c;
   color: white;
   border: none;
+  padding: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  border-radius: 5px;
 }
 
 button:hover {
-  background: #00c6ff;
+  background: #521a3c;
 }
 
-#resultado {
-  margin-top: 15px;
-  text-align: left;
-  white-space: pre-line;
-  font-size: 14px;
+footer {
+  margin-top: 30px;
+  background: #7a2e5c;
+  color: white;
+  padding: 10px;
 }
