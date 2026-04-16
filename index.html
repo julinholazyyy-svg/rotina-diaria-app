@@ -2,13 +2,13 @@
 <html lang="pt">
 <head>
   <meta charset="UTF-8">
-  <title>SweetBite Store</title>
+  <title>SweetBite | Doces Premium</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="topbar">
+<header>
   <div class="logo">🍫 SweetBite</div>
 
   <input type="text" id="search" placeholder="Pesquisar doces..." onkeyup="filtrar()">
@@ -20,7 +20,7 @@
 
 <section class="hero">
   <h1>Doces artesanais premium</h1>
-  <p>Qualidade, sabor e elegância em cada mordida</p>
+  <p>Sabor único, qualidade real, feitos com amor 🍫</p>
 </section>
 
 <section class="produtos" id="produtos">
@@ -28,31 +28,55 @@
   <div class="card" data-name="caixa classica chocolate">
     <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b">
     <h3>Caixa Clássica</h3>
-    <p>12 chocolates artesanais</p>
+    <p>12 chocolates sortidos</p>
     <span>14,99€</span>
-    <button onclick="comprar()">Adicionar ao carrinho</button>
+    <button onclick="comprar()">Adicionar</button>
   </div>
 
   <div class="card" data-name="trufas premium chocolate">
     <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
     <h3>Trufas Premium</h3>
-    <p>Trufas de chocolate belga</p>
+    <p>Trufas belgas gourmet</p>
     <span>9,99€</span>
-    <button onclick="comprar()">Adicionar ao carrinho</button>
+    <button onclick="comprar()">Adicionar</button>
   </div>
 
-  <div class="card" data-name="caixa oferta presente chocolate">
+  <div class="card" data-name="caixa oferta presente luxo chocolate">
     <img src="https://images.unsplash.com/photo-1511381939415-e44015466834">
-    <h3>Caixa Oferta</h3>
-    <p>Edição especial para presentes</p>
+    <h3>Caixa Luxo</h3>
+    <p>Edição especial presente</p>
     <span>19,99€</span>
-    <button onclick="comprar()">Adicionar ao carrinho</button>
+    <button onclick="comprar()">Adicionar</button>
+  </div>
+
+  <div class="card" data-name="donuts doces açucarados">
+    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b">
+    <h3>Donuts Sweet</h3>
+    <p>Donuts frescos com cobertura</p>
+    <span>6,99€</span>
+    <button onclick="comprar()">Adicionar</button>
+  </div>
+
+  <div class="card" data-name="cupcakes chocolate morango">
+    <img src="https://images.unsplash.com/photo-1505253213348-cd54c92b37b5">
+    <h3>Cupcakes</h3>
+    <p>Chocolate & morango</p>
+    <span>7,99€</span>
+    <button onclick="comprar()">Adicionar</button>
+  </div>
+
+  <div class="card" data-name="bombons finos gourmet chocolate">
+    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90">
+    <h3>Bombons Finos</h3>
+    <p>Seleção gourmet premium</p>
+    <span>12,99€</span>
+    <button onclick="comprar()">Adicionar</button>
   </div>
 
 </section>
 
 <footer>
-  <p>© 2026 SweetBite Store</p>
+  <p>© 2026 SweetBite — Marca oficial de chocolates premium</p>
 </footer>
 
 <script src="script.js"></script>
