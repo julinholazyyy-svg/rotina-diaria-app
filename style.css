@@ -4,22 +4,22 @@ body {
   background: #fff7f5;
 }
 
-/* TOPBAR FIXA */
-.topbar {
+/* HEADER BRAND */
+header {
   position: sticky;
   top: 0;
-  background: #2d132c;
+  background: #1f0f1f;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 20px;
-  z-index: 10;
 }
 
 .logo {
+  font-size: 22px;
   font-weight: bold;
-  font-size: 20px;
+  letter-spacing: 1px;
 }
 
 #search {
@@ -29,11 +29,19 @@ body {
   border: none;
 }
 
+.cart {
+  font-size: 18px;
+}
+
 /* HERO */
 .hero {
   text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #ffe3ec, #fff);
+  padding: 70px 20px;
+  background: linear-gradient(135deg, #ffe3ec, #ffffff);
+}
+
+.hero h1 {
+  font-size: 40px;
 }
 
 /* PRODUTOS */
@@ -41,21 +49,21 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 30px;
+  gap: 25px;
+  padding: 40px;
 }
 
 .card {
-  width: 260px;
+  width: 270px;
   background: white;
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
 .card img {
@@ -84,25 +92,20 @@ button {
   width: 90%;
   padding: 10px;
   border: none;
-  background: #2d132c;
+  background: #1f0f1f;
   color: white;
   border-radius: 8px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #4a1f40;
-}
-
-/* CART */
-.cart {
-  font-size: 18px;
+  background: #3a1b3a;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #2d132c;
+  background: #1f0f1f;
   color: white;
 }
