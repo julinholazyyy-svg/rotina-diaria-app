@@ -4,46 +4,46 @@
   <meta charset="UTF-8">
   <title>SweetBite Store</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <header>
-  <h1>🍫 SweetBite</h1>
-  <p>Doces artesanais feitos com amor</p>
+  <div class="logo">🍫 SweetBite</div>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contacto</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="#">Início</a>
-  <a href="#">Produtos</a>
-  <a href="#">Sobre</a>
-  <a href="#">Contacto</a>
-</nav>
-
 <section class="hero">
-  <h2>Os melhores chocolates artesanais</h2>
-  <p>Feitos à mão, com ingredientes de qualidade</p>
+  <h1>Doces artesanais premium</h1>
+  <p>Chocolate feito com paixão, qualidade e sabor único</p>
+  <button onclick="scrollProdutos()">Ver produtos</button>
 </section>
 
-<section class="produtos">
+<section class="produtos" id="produtos">
 
   <div class="card">
-    <img src="https://via.placeholder.com/250x150" alt="Chocolates">
+    <img src="https://images.unsplash.com/photo-1549007994-cb92caebd54b" alt="Chocolates">
     <h3>Caixa Clássica</h3>
-    <p>12 chocolates sortidos artesanais</p>
+    <p>12 chocolates artesanais sortidos</p>
     <span>14,99€</span>
     <button onclick="comprar('Caixa Clássica')">Comprar</button>
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/250x150" alt="Trufas">
+    <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52" alt="Trufas">
     <h3>Trufas Premium</h3>
-    <p>Trufas de chocolate belga</p>
+    <p>Trufas de chocolate belga gourmet</p>
     <span>9,99€</span>
     <button onclick="comprar('Trufas Premium')">Comprar</button>
   </div>
 
   <div class="card">
-    <img src="https://via.placeholder.com/250x150" alt="Caixa oferta">
+    <img src="https://images.unsplash.com/photo-1511381939415-e44015466834" alt="Caixa presente">
     <h3>Caixa Oferta</h3>
     <p>Edição especial para presentes</p>
     <span>19,99€</span>
@@ -53,7 +53,7 @@
 </section>
 
 <footer>
-  <p>© 2026 SweetBite Store</p>
+  <p>© 2026 SweetBite Store — Todos os direitos reservados</p>
 </footer>
 
 <script src="script.js"></script>
