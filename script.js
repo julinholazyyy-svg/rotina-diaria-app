@@ -11,6 +11,7 @@ function filtrar() {
 
   cards.forEach(card => {
     let nome = card.getAttribute("data-name");
+
     if (nome.includes(input)) {
       card.style.display = "block";
     } else {
